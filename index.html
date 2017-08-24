@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+        body{padding-top: 110px;}
+        .fz20{font-size: 20px}
+        .mg-left5{margin-left: 5px}
+        .mg-left10{margin-left: 10px}
+        .va-mid{vertical-align: middle}
+        .top30{top:30px}
+        .patb10{padding: 10px 0}
+        .red{color: #f04949}
+        .black{color: #000}
+        .border5{border: 5px solid}
+        .br4{border-radius: 4px}
+        .w100{width: 100%}
+        .defaultall{background: #ebebeb;color: #000;border: 5px solid #ebebeb;border-radius: 4px}
+        .active_all_red{background: #f04949;color: #fff;border-color:#f04949}
+        .pab30{padding-bottom: 30px}
+        .borderred{border: 1px solid red;border-radius: 4px}
+        .activered{background: #f04949;color: #fff}
+        .activered a{color: #fff}
+        .mwidth180{max-width:180px}
+        .mwidth516{max-width: 516px}
+        .pat100{padding-top: 100px}
+        .pat50b70{padding: 50px 0 70px}
+        .pab45{padding-bottom: 45px}
+        .mwidth262{max-width: 262px}
+        .mgb20{margin-bottom: 20px}
+        .pab90{padding-bottom: 90px}
+        .disib{display: inline-block}
+        .white{color: #fff}
+        .padside10{padding: 0 10%}
+        .pat60b80{padding: 60px 0 80px}
+        .mxwidth54{max-width: 54px}
+        .bordertopred{border-top: 5px solid #f04949}
+        .fontsize50{font-size: 50px}
+        .mgb50{margin-bottom: 50px}
+        .ourteam{background: #f04949}
+        .mxwidth360{max-width: 360px}
+        .pt20{padding-top: 20px}
+        .padtb40{padding: 40px 0}
+        .padtb80{padding: 80px 0}
+        .pt50{padding-top: 50px}
+
+        .header-top{background: #1f272d;height: 30px;line-height: 30px;}
+        .userMenu,.social-networks{list-style: none;margin-bottom: 0}
+        .userMenu>li,.social-networks>li{float: left;margin-right: 10px;}
+        .userMenu>li>a{color: #717171}
+        .header-main{height: 80px}
+        .navbar-nav > li > a {padding-top: 30px;padding-bottom: 30px;}
+        .navbar-toggle{margin-top: 20px}
+        .banner{background: #f04949;padding: 60px 0 50px;text-align: center;color: #fff}
+        footer{background: #283036}
+        @media screen and (max-width: 992px) {
+            .text-center-sm {text-align: center}
+            .pat0-sm{padding-top: 0}
+            .floatnone{float: none!important;}
+            .floatright{float: right!important;}
+            .margin0auto{margin: 0 auto}
+            .fs35-sm{font-size: 35px}
+
+        }
+        
+        .welcome{height: 372px;background: url("images/tc110.png") no-repeat;background-attachment: fixed;background-position:0 300px;margin-bottom: 110px}
+        .welcomebtn{background: none;border-color: #fff;padding: 10px 30px;font-size: 25px}
+        .bgcolorba{background: rgba(0,0,0,.5);height: 372px}
+        
+        .linered_pic1{background: url("images/datee_03.jpg") no-repeat 10% 0,url("images/tc121.png") no-repeat;width: 146px;height:146px;background-size:auto, cover;border-top: 4px solid #f04949}
+        .linered_pic2{background: url("images/datee_03.jpg") no-repeat 10% 0,url("images/tc122.png") no-repeat;width: 146px;height:146px;background-size:auto, cover;border-top: 4px solid #f04949}
+        .linered_pic3{background: url("images/datee_03.jpg") no-repeat 10% 0,url("images/tc123.png") no-repeat;width: 146px;height:146px;background-size:auto, cover;border-top: 4px solid #f04949}
+        .linered_pic4{background: url("images/datee_03.jpg") no-repeat 10% 0,url("images/tc124.png") no-repeat;width: 146px;height:146px;background-size:auto, cover;border-top: 4px solid #f04949}
+        .teampic{max-width: 212px}
+        .panel{border: none;box-shadow: none}
+        .panel-group .panel{border-radius: 0}
+        .panel-default > .panel-heading{background: #d3d3d3;}
+        .panel-danger > .panel-heading{color: #fff;background-color: #f04949;}
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-top navbar-fixed-top">
+        <div class="container">
+            <div class="pull-left">
+                <ul class="userMenu">
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-time fz20 va-mid"></span>
+                            <span class="hidden-xs hidden-sm mg-left5">Sunday, February 16 ,2014</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-earphone fz20 va-mid"></span>
+                            <span class="hidden-xs hidden-sm mg-left5">+86 13888888888</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-envelope fz20 va-mid"></span>
+                            <span class="hidden-xs hidden-sm mg-left5">yourmail@gmail.com</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="social-networks hidden-xs pull-right">
+                <li><a href="#"><img src="images/awesome_modify_09.jpg"></a></li>
+                <li><a href="#"><img src="images/awesome_modify_11.jpg"></a></li>
+                <li><a href="#"><img src="images/awesome_modify_13.jpg"></a></li>
+                <li><a href="#"><img src="images/awesome_modify_15.jpg"></a></li>
+                <li><a href="#"><img src="images/awesome_modify_17.jpg"></a></li>
+            </ul>
+
+        </div>
+    </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top top30  header-main" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand patb10 mg-left10" href="#"><img src="images/logo.png" class="img-responsive center-block mwidth180" alt="Brand"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolios</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Our Products</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 mwidth516">
+                <img src="images/img.png" class="img-responsive hidden-xs hidden-sm">
+            </div>
+            <div class="col-md-7 pat100 pat0-sm">
+                <h1 class="text-left text-uppercase text-center-sm">An Amazing Responsive wordpress theme</h1>
+                <p class="text-left text-center-sm">Lorem ipsum ex vix illud nonummy novum tation et his. At vix scriptaset patrioque scribentur, at pro fugit erts verterem molestiae, sed et vivendo ali Lorem ipsum ex vix illud nonummy, novum tation et his. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pat50b70">
+    <div class="container text-center">
+        <h3 class="red pab30">Some Amazing Features</h3>
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at.Cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet erorem ipsum dolor sit amet consectetuer adipiscing elit. Mauris fermentum dictum magna.</p>
+    </div>
+</section>
+<section class="pab90">
+    <div class="container">
+        <div class="clearfix pab45 text-center-sm">
+            <h4 class="disib ">Recent Portfolio</h4>
+            <ul class="nav nav-pills pull-right borderred hidden-xs hidden-sm">
+                <li role="presentation" class="activered"><a href="#">ALL</a></li>
+                <li role="presentation"><a href="#" class="black">CATEGORY1</a></li>
+                <li role="presentation"><a href="#" class="black">CATEGORY2</a></li>
+                <li role="presentation"><a href="#" class="black">CATEGORY3</a></li>
+            </ul>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-6 col-md-3 center-block mgb20">
+                <div class="defaultall active_all_red mwidth262 disib">
+                    <img src="images/tc116.png" class="img-responsive disib">
+                    <p class="patb10">Responsive Design<br>Quisque euismod orci ut et ..</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 center-block mgb20">
+                <div class="defaultall mwidth262 disib">
+                    <img src="images/tc113.png" class="img-responsive disib">
+                    <p class="patb10">Responsive Design<br>Quisque euismod orci ut et ..</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 center-block mgb20">
+                <div class="defaultall mwidth262 disib">
+                    <img src="images/tc115.png" class="img-responsive disib">
+                    <p class="patb10">Responsive Design<br>Quisque euismod orci ut et ..</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 center-block mgb20">
+                <div class="defaultall mwidth262 disib">
+                    <img src="images/tc114.png" class="img-responsive disib">
+                    <p class="patb10">Responsive Design<br>Quisque euismod orci ut et ..</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="welcome white">
+    <div class="bgcolorba">
+        <div class="container text-center pat60b80">
+            <h1 class="fontsize50 fs35-sm">Welcome to our website!</h1>
+            <p class="padside10 mgb20">We're experts in this field and we strive to provide high-quality web design, custom development and maintenance. Our goal is to provide unique design, powerful and practical functions, easy operation and user-friendly interface.</p>
+            <button type="button" class="btn welcomebtn">Purchase Now</button>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row mgb50">
+            <div class="col-md-4 clearfix">
+                <div class="pull-left mxwidth54 hidden-xs hidden-sm">
+                    <img src="images/icoy_03.jpg">
+                </div>
+                <div class="pull-left mg-left10 text-center-sm floatnone margin0auto" style="width: 70%">
+                    <h5 class="red">Full responsive</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet ollicitudin.Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+            </div>
+            <div class="col-md-4 clearfix">
+                <div class="pull-left mxwidth54 hidden-xs hidden-sm">
+                    <img src="images/icoy_08.jpg">
+                </div>
+                <div class="pull-left mg-left10 text-center-sm floatnone margin0auto" style="width: 70%">
+                    <h5 class="red">Code With Love</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet ollicitudin.Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+            </div>
+            <div class="col-md-4 clearfix">
+                <div class="pull-left mxwidth54 hidden-xs hidden-sm">
+                    <img src="images/icoy_05.jpg">
+                </div>
+                <div class="pull-left mg-left10 text-center-sm floatnone margin0auto" style="width: 70%">
+                    <h5 class="red">Professional Customer Service</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet ollicitudin.Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mgb50">
+            <div class="col-md-8">
+                <h3 class="text-center-sm mgb50">Latest News</h3>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 mgb20">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="floatright linered_pic1"></div>
+                            </div>
+                            <div class="col-md-6 hidden-xs hidden-sm">
+                                <h4>Hello World! This is my first post.</h4>
+                                <p>Cum soccis natoquo pennatibus et magins dis pennatikus montese,nasatur ridiculus mus</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 mgb20">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="linered_pic2"></div>
+                            </div>
+                            <div class="col-md-6 hidden-xs hidden-sm">
+                                <h4>Hello World! This is my first post.</h4>
+                                <p>Cum soccis natoquo pennatibus et magins dis pennatikus montese,nasatur ridiculus mus</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 mgb20">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="floatright linered_pic3"></div>
+                            </div>
+                            <div class="col-md-6 hidden-xs hidden-sm">
+                                <h4>Hello World! This is my first post.</h4>
+                                <p>Cum soccis natoquo pennatibus et magins dis pennatikus montese,nasatur ridiculus mus</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 mgb20">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="linered_pic4"></div>
+                            </div>
+                            <div class="col-md-6 hidden-xs hidden-sm">
+                                <h4>Hello World! This is my first post.</h4>
+                                <p>Cum soccis natoquo pennatibus et magins dis pennatikus montese,nasatur ridiculus mus</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h3 class="text-center-sm mgb50">Our Services</h3>
+                <div class="panel-group mxwidth360 center-block" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-danger mgb20">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;MANAGEMENT CONSULTING
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                Lorem ipsum dolor sit amet, consectetur scing elit. Ut volutpat rutrum eros sit amet ollicitudin.Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet ollicitudin.Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur avolutpat ru.Lorem ipsum dolor sit amet, consectetur.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default mgb20">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <span class="glyphicon glyphicon-minus"></span>&nbsp;&nbsp;MANAGEMENT CONSULTING
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                Lorem ipsum dolor sit amet, consectetur scing elit. Ut volutpat rutrum eros sit amet ollicitudin.Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet ollicitudin.Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur avolutpat ru.Lorem ipsum dolor sit amet, consectetur.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default mgb20">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span class="glyphicon glyphicon-minus"></span>&nbsp;&nbsp;MANAGEMENT CONSULTING
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                Lorem ipsum dolor sit amet, consectetur scing elit. Ut volutpat rutrum eros sit amet ollicitudin.Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet ollicitudin.Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur avolutpat ru.Lorem ipsum dolor sit amet, consectetur.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ourteam text-center white padtb40">
+    <div class="container">
+        <h2>Our Team</h2>
+        <p class="padside10">orem ipsum dolor sit amet, consectetur scing elit. Ut volutpat rutrsit amet, consectetuum eros sectetur.Lorem ipsum dolorpsu
+            sit amet ollicitudin.Lorem ipsum dolor sit etur.Lorem ipsum dolorpsu.Lorem ipsum dolorpsum dolor sit
+            amet, consectetur scing elit. Ut volutpat rutrum e</p>
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="disib">
+                    <img src="images/tc.png" class="img-responsive img-circle teampic">
+                    <p class="fz20 pt20">Frankie</p>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="disib">
+                    <img src="images/tc18.png" class="img-responsive img-circle teampic">
+                    <p class="fz20 pt20">Elia Erica</p>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="disib">
+                    <img src="images/tc119.png" class="img-responsive img-circle teampic">
+                    <p class="fz20 pt20">Brown Jone</p>
+                </div>
+
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="disib">
+                    <img src="images/tc120.png" class="img-responsive img-circle teampic">
+                    <p class="fz20 pt20">Marh die</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="text-center padtb80 white">
+    <div class="disib">
+        <img src="images/logo.png" class="img-responsive">
+    </div>
+
+    <p class="pt50">COPYRIGHT BY 2012 AWESOME<br>COPYRIGHT BY 2012 AWESOME | PRIVACY STATEMENT | TERMS OF USE</p>
+</footer>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+<script>
+    $(function(){
+        $(".navbar-nav li").click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+//        var header_Height =$(".banner_pic").height();
+//
+//        $(".banner_text").css({"line-height":header_Height+"px"})
+
+    })
+
+</script>
